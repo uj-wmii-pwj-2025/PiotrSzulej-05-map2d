@@ -3,6 +3,7 @@ package uj.wmii.pwj.map2d;
 import java.util.Map;
 import java.util.function.Function;
 
+
 /**
  * Interface providing 2-dimensional map.
  * It can be viewed as rows and cells sheet, with row keys and column keys.
@@ -213,7 +214,7 @@ public interface Map2D<R, C, V> {
      * @return new instance of {@code Map2D}
      */
     static <R,C,V> Map2D<R,C,V> createInstance() {
-        return null;
+        return new Map2DImplementation<>();
     }
 
 }
